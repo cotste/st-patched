@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-//static char *font = "Inconsolata:style=regular:pixelsize=15:antialias=true:autohint=true";
-static char *font = "FiraCode Nerd Font:style=regular:pixelsize=15:antialias=true:autohint=true";
+//static char *font = "Inconsolata:pixelsize=14:antialias=true:autohint=true";
+static char *font = "FiraCode Nerd Font Mono:style=Regular:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
@@ -85,12 +85,24 @@ unsigned int tabspaces = 8;
 
 /* bg opacity */
 float alpha = 0.85;           //< alpha value used when the window is focused.
-float alphaUnfocussed = 0.7; //< alpha value used when the focus is lost
+float alphaUnfocussed = 0.75; //< alpha value used when the focus is lost
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
 	
+ /* 
+  "black",
+	"red3",
+	"green3",
+	"yellow3",
+	"blue2",
+	"magenta3",
+	"cyan3",
+	"gray90",
+*/
+
+
 	"#3b4252", /* black   */
 	"#bf616a", /* red     */
 	"#a3be8c", /* green   */
@@ -102,8 +114,8 @@ static const char *colorname[] = {
 
   /* 8 bright colors */
 
-  "#6d7a96", /* black */
-/*"#4c566a", */ /* black   */
+  "#616e88",
+/*	"#4c566a",*/ /* black   */
 	"#bf616a", /* red     */
 	"#a3be8c", /* green   */
 	"#ebcb8b", /* yellow  */
@@ -112,11 +124,25 @@ static const char *colorname[] = {
 	"#8fbcbb", /* cyan    */
 	"#eceff4", /* white   */
 
+
+/*
+  "gray50",
+	"red",
+	"green",
+	"yellow",
+	"#5c5cff",
+	"magenta",
+	"cyan",
+	"white",
+*/
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#2e3440", /* background */
 	"#d8dee9", /* foreground */
+	"#cccccc",
+	"#555555",
+	"black",
 };
 
 
